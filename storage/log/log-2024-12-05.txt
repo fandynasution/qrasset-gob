@@ -1,0 +1,4 @@
+2024-12-05 14:06:27 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-05 14:06:27 [INFO]: Success get Data from Database
+2024-12-05 14:07:03 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-05 14:07:03 [INFO]: Success get Data from Database

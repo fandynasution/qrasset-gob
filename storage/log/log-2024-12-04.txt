@@ -1,0 +1,52 @@
+2024-12-04 10:24:41 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:24:41 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:24:43 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
+2024-12-04 10:24:43 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:28:11 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:28:11 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:28:14 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
+2024-12-04 10:28:14 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:40:55 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:40:55 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:40:55 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-04 10:40:56 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:40:56 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:40:56 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:42:40 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:42:40 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:42:40 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-04 10:42:40 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:42:40 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:42:40 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:45:11 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:45:11 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:45:13 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
+2024-12-04 10:45:13 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:46:03 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:46:03 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:46:05 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
+2024-12-04 10:46:05 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:47:18 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:47:18 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:47:20 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
+2024-12-04 10:47:20 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:48:04 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:48:04 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:48:04 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-04 10:48:04 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:48:04 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:48:04 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:50:44 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:50:44 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:50:44 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-04 10:50:44 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:50:44 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:50:44 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:55:20 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:55:20 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:55:22 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
+2024-12-04 10:55:22 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:55:44 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-04 10:55:44 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-04 10:55:46 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
+2024-12-04 10:55:46 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21

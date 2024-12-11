@@ -1,0 +1,107 @@
+2024-11-29 11:15:50 [ERROR]: entity_cd and reg_id are required
+2024-11-29 11:16:09 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:16:09 [WARN]: No records found
+2024-11-29 11:17:06 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:17:37 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:18:21 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:19:29 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:27:59 [ERROR]: entity_cd and reg_id are required
+2024-11-29 11:30:05 [INFO]: Processing data for entity_cd: 01 and reg_id: 006/EQP2/BTID/VI/12
+2024-11-29 11:30:05 [INFO]: Success get Data from Database
+2024-11-29 11:31:39 [INFO]: Processing data for entity_cd: 01 and reg_id: 006/EQP2/BTID/VI/12
+2024-11-29 11:31:39 [INFO]: Success get Data from Database
+2024-11-29 11:32:12 [INFO]: Processing data for entity_cd: 01 and reg_id: 006/EQP2/BTID/VI/12
+2024-11-29 11:32:26 [INFO]: Processing data for entity_cd: 01 and reg_id: 006/EQP2/BTID/VI/12
+2024-11-29 11:32:26 [INFO]: Success get Data from Database
+2024-11-29 11:32:43 [INFO]: Processing data for entity_cd: 01 and reg_id: 006/EQP2/BTID/VI/12
+2024-11-29 11:32:43 [INFO]: Success get Data from Database
+2024-11-29 11:33:00 [INFO]: Processing data for entity_cd: 01 and reg_id: 006/EQP2/BTID/VI/12
+2024-11-29 11:33:00 [INFO]: Success get Data from Database
+2024-11-29 11:38:11 [INFO]: Processing data for entity_cd: 01 and reg_id: 006/EQP2/BTID/VI/12
+2024-11-29 11:44:44 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:47:23 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:47:23 [ERROR]: Failed to update assets: Cannot convert a char value to money. The char value has incorrect syntax.
+2024-11-29 11:49:29 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:58:26 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 11:58:43 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:35:21 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:35:21 [ERROR]: Failed to update assets: Cannot insert the value NULL into column 'change_date', table 'BTID_TEST.mgr.fa_fasset_location_his'; column does not allow nulls. INSERT fails.
+2024-11-29 12:37:37 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:37:37 [ERROR]: Failed to update assets: Cannot insert the value NULL into column 'audit_user', table 'BTID_TEST.mgr.fa_fasset_location_his'; column does not allow nulls. INSERT fails.
+2024-11-29 12:38:52 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:38:52 [ERROR]: Failed to update assets: Cannot insert the value NULL into column 'audit_date', table 'BTID_TEST.mgr.fa_fasset_location_his'; column does not allow nulls. INSERT fails.
+2024-11-29 12:39:54 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:40:15 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:42:25 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:43:09 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:43:33 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:43:49 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:46:45 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:47:02 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:47:57 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:51:57 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:52:07 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:53:04 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:53:15 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:53:15 [ERROR]: Failed to update assets: Invalid column name 'location_map_baru'.
+2024-11-29 12:57:04 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:57:13 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:58:05 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:58:52 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:59:01 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 12:59:09 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:00:58 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:01:15 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:01:20 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:02:12 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:04:12 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:04:25 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:04:49 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:05:00 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:05:14 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:07:06 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:07:46 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:08:16 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:09:01 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:11:37 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:12:11 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:13:23 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:13:51 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:16:38 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:16:47 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:17:25 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:18:21 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:19:07 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:19:18 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:19:50 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:53:06 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:53:50 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:53:50 [ERROR]: Failed to update assets: Validation failed for parameter 'location_map'. Invalid string.
+2024-11-29 13:54:30 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:54:30 [ERROR]: Failed to update assets: Validation failed for parameter 'status_review'. Invalid string.
+2024-11-29 13:54:51 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:54:51 [ERROR]: Failed to update assets: Validation failed for parameter 'status_review'. Invalid string.
+2024-11-29 13:56:16 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 13:56:28 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:13:18 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:13:40 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:13:41 [ERROR]: Failed to update assets: Invalid column name 'note'.
+2024-11-29 15:14:20 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:14:32 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:14:50 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:16:52 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:17:00 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:17:49 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:18:59 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:19:31 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:19:47 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:19:57 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:20:14 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:20:24 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:23:11 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:24:20 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:25:09 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:25:17 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:25:43 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:26:59 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
+2024-11-29 15:26:59 [INFO]: Success update data to Database

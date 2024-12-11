@@ -1,0 +1,131 @@
+2024-12-03 09:53:46 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 09:53:46 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: ENOENT: no such file or directory, open 'D:\WORK\BTID\Project\qrasset-btid\src\controllers\image_01_008\EQP2\BTID\VI\21.jpeg'
+2024-12-03 09:53:46 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 09:56:27 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 09:56:27 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: ENOENT: no such file or directory, open 'D:\WORK\BTID\Project\qrasset-btid\src\controllers\image_01_008\EQP2\BTID\VI\21.jpeg'
+2024-12-03 09:56:27 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:16:49 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:16:49 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\src\controllers\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:16:49 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: TypeError: Cannot read properties of undefined (reading 'Client')
+2024-12-03 10:16:49 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:18:52 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:18:52 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: ENOENT: no such file or directory, open 'D:\WORK\BTID\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg'
+2024-12-03 10:18:52 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:19:20 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:19:20 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: ENOENT: no such file or directory, open 'D:\WORK\BTID\Project\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg'
+2024-12-03 10:19:20 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:19:41 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:19:41 [INFO]: Temporary file created at: storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:19:41 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: TypeError: Cannot read properties of undefined (reading 'Client')
+2024-12-03 10:19:41 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:20:51 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:20:51 [INFO]: Directory created: D:\WORK\BTID\Project\qrasset-btid\src\controllers\storage\temppicture
+2024-12-03 10:20:51 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\src\controllers\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:20:51 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: TypeError: Cannot read properties of undefined (reading 'Client')
+2024-12-03 10:20:51 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:21:41 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:21:41 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:21:41 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: TypeError: Cannot read properties of undefined (reading 'Client')
+2024-12-03 10:21:41 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:22:48 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:22:48 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:22:48 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: FTPError: 530 Login incorrect.
+2024-12-03 10:22:48 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:23:47 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:23:47 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:23:47 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: FTPError: 530 Login incorrect.
+2024-12-03 10:23:47 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:24:23 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:24:23 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:24:23 [INFO]: Ensured folder exists: /ifca-att
+2024-12-03 10:24:24 [INFO]: File uploaded to FTP: /ifca-att/image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:24:24 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:24:24 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:25:16 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:25:16 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:25:16 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture
+2024-12-03 10:25:16 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:25:16 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\image_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:25:16 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:27:59 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:27:59 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:27:59 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/
+2024-12-03 10:28:00 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:28:00 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:28:00 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:29:45 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:29:45 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:29:45 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture
+2024-12-03 10:29:45 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:29:45 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:29:45 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:31:12 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:31:12 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:31:12 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture
+2024-12-03 10:31:12 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:31:12 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:31:12 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:32:25 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:32:25 [INFO]: Success get Data from Database
+2024-12-03 10:33:18 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:33:18 [INFO]: Success get Data from Database
+2024-12-03 10:35:11 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:35:11 [INFO]: Success get Data from Database
+2024-12-03 10:39:53 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:39:53 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:39:53 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture
+2024-12-03 10:39:53 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:39:53 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:39:53 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:41:04 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:41:04 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:41:04 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 10:41:04 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:41:04 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:41:04 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:57:32 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 10:57:32 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:57:33 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 10:57:33 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:57:33 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 10:57:33 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:01:39 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:01:39 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:01:39 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 11:01:39 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:01:39 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:01:39 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:04:30 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:04:30 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:04:30 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 11:04:30 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:04:30 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:04:30 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:04:46 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:04:46 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:04:46 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 11:04:46 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:04:46 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:04:47 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:05:08 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:05:08 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:05:19 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:05:19 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:05:20 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 11:05:20 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:05:20 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:05:20 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:06:05 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:06:05 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:06:18 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:06:18 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:06:18 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 11:06:18 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture//Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:06:18 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:06:18 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:08:35 [INFO]: Processing data for entity_cd: 01 and reg_id: 008/EQP2/BTID/VI/21
+2024-12-03 11:08:35 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:08:36 [INFO]: Ensured folder exists: /ifca-att/FAAssetUpload/AssetPicture/
+2024-12-03 11:08:36 [INFO]: File uploaded to FTP: /ifca-att/FAAssetUpload/AssetPicture/Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:08:36 [INFO]: Temporary file deleted: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
+2024-12-03 11:08:36 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
