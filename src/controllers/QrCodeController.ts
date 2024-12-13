@@ -59,8 +59,8 @@ export const generateAndSaveQrCode = async (req: Request, res: Response) => {
         const filteredDataWithQRCode = await Promise.all(dataQr.map(async (item: any) => {
             const qrContent = [
                 {
-                    entity_cd: item.entity_cd,
-                    reg_id: item.reg_id
+                    entity_cd: item.entity_cd.trim(),
+                    reg_id: item.reg_id.trim()
                 }
             ];
             

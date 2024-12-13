@@ -1,0 +1,20 @@
+2024-12-13 03:42:48 [INFO]: Success get Data with QR from Database
+2024-12-13 05:04:53 [INFO]: Success get Data with QR from Database
+2024-12-13 07:56:50 [INFO]: Success get Data with QR from Database
+2024-12-13 07:56:53 [INFO]: Success get Data with QR from Database
+2024-12-13 07:56:55 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 07:56:55 [INFO]: Success get Data from Database
+2024-12-13 07:56:55 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 07:56:55 [INFO]: Success get Data from Database
+2024-12-13 07:57:08 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 07:57:08 [INFO]: Success get Data from Database
+2024-12-13 07:57:08 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 07:57:08 [INFO]: Success get Data from Database
+2024-12-13 07:57:24 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 07:57:24 [INFO]: Success get Data from Database
+2024-12-13 07:57:24 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 07:57:24 [INFO]: Success get Data from Database
+2024-12-13 08:42:46 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 08:42:47 [INFO]: Success get Data from Database
+2024-12-13 08:42:47 [INFO]: Processing data for entity_cd: 0001 and reg_id: 001/SFW/GOB/VIII/24
+2024-12-13 08:42:47 [INFO]: Success get Data from Database
