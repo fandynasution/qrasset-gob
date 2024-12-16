@@ -137,7 +137,7 @@ export const UpdateAsset = async (req: Request, res: Response) => {
 
                     await ftpClient.access({
                         host: ftpDetails.FTPServer, // Ganti dengan host FTP Anda
-                        port: parseInt(ftpDetails.FTPPORT, 10),
+                        port: parseInt(ftpDetails.FTPPort, 10),
                         user: ftpDetails.FTPUser,       // Username FTP
                         password: ftpDetails.FTPPassword,// Password FTP
                         secure: false,           // Atur ke true jika menggunakan FTPS
