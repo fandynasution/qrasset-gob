@@ -7,7 +7,7 @@
 2024-12-02 11:16:16 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
 2024-12-02 11:16:16 [ERROR]: Failed to update assets: Invalid column name 'notes'.
 2024-12-02 11:17:02 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
-2024-12-02 11:17:02 [ERROR]: Failed to update assets: Invalid column name 'source_file_attachment'.
+2024-12-02 11:17:02 [ERROR]: Failed to update assets: Invalid column name 'url_file_attachment'.
 2024-12-02 11:17:49 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
 2024-12-02 11:17:50 [ERROR]: Failed to update assets: Invalid column name 'location_map'.
 2024-12-02 11:19:04 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
@@ -207,11 +207,11 @@
 2024-12-02 14:13:07 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
 2024-12-02 14:13:07 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 001/RNV1/BTID/IV/13
 2024-12-02 14:19:37 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
-2024-12-02 14:19:37 [ERROR]: Failed to update assets: Must declare the scalar variable "@source_file_attachment".
+2024-12-02 14:19:37 [ERROR]: Failed to update assets: Must declare the scalar variable "@url_file_attachment".
 2024-12-02 14:20:19 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
-2024-12-02 14:20:19 [ERROR]: Failed to update assets: Must declare the scalar variable "@source_file_attachment".
+2024-12-02 14:20:19 [ERROR]: Failed to update assets: Must declare the scalar variable "@url_file_attachment".
 2024-12-02 14:21:28 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
-2024-12-02 14:21:28 [ERROR]: Failed to update assets: Must declare the scalar variable "@source_file_attachment".
+2024-12-02 14:21:28 [ERROR]: Failed to update assets: Must declare the scalar variable "@url_file_attachment".
 2024-12-02 14:24:03 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13
 2024-12-02 14:24:03 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 001/RNV1/BTID/IV/13
 2024-12-02 14:24:40 [INFO]: Processing data for entity_cd: 01 and reg_id: 001/RNV1/BTID/IV/13

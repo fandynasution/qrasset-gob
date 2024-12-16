@@ -13,7 +13,7 @@ export const checkAndUpdateAsset = async (
             .input('entity_cd', sql.VarChar, entity_cd)
             .input('reg_id', sql.VarChar, reg_id)
             .query(`
-                SELECT source_file_attachment, location_map, status_review
+                SELECT url_file_attachment, location_map, status_review
                 FROM mgr.fa_fasset
                 WHERE entity_cd = @entity_cd AND reg_id = @reg_id
             `);

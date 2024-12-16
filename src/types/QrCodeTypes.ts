@@ -12,7 +12,7 @@ export interface QrCodeInsertData {
 export interface DataAssetUpdate {
     entity_cd: string;
     reg_id: string;
-    source_file_attachment: string;
+    url_file_attachment: string;
     location_map: string;
     status_review: string;
     notes: string;

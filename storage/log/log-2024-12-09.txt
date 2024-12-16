@@ -78,11 +78,11 @@
 2024-12-09 09:49:08 [INFO]: Temporary file created at: D:\WORK\BTID\Project\qrasset-btid\storage\temppicture\Asset_01_008_EQP2_BTID_VI_21.jpeg
 2024-12-09 09:49:10 [ERROR]: FTP upload failed for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21. Error: Error: connect ECONNREFUSED 103.84.193.221:21 (control socket)
 2024-12-09 09:49:10 [INFO]: Successfully updated data for entity_cd: 01, reg_id: 008/EQP2/BTID/VI/21
-2024-12-09 10:58:49 [ERROR]: entity_cd and / or reg_id and / or location_map and / or source_file_attachment and / or status_review are required
-2024-12-09 11:00:45 [ERROR]: Validation failed. Entry at index 0 is missing: source_file_attachment
-2024-12-09 11:01:24 [ERROR]: Validation failed. Entry at index 0 is missing: source_file_attachment, status_review
-2024-12-09 11:01:38 [ERROR]: Validation failed. Entry at index 0 is missing: source_file_attachment& status_review
-2024-12-09 11:03:00 [ERROR]: Validation failed. source_file_attachment is required, status_review is required
-2024-12-09 11:04:58 [ERROR]: Validation failed. source_file_attachment & status_review are required
-2024-12-09 11:05:07 [ERROR]: Validation failed. location_map, source_file_attachment & status_review are required
-2024-12-09 11:05:23 [ERROR]: Update failed. location_map, source_file_attachment & status_review are required
+2024-12-09 10:58:49 [ERROR]: entity_cd and / or reg_id and / or location_map and / or url_file_attachment and / or status_review are required
+2024-12-09 11:00:45 [ERROR]: Validation failed. Entry at index 0 is missing: url_file_attachment
+2024-12-09 11:01:24 [ERROR]: Validation failed. Entry at index 0 is missing: url_file_attachment, status_review
+2024-12-09 11:01:38 [ERROR]: Validation failed. Entry at index 0 is missing: url_file_attachment& status_review
+2024-12-09 11:03:00 [ERROR]: Validation failed. url_file_attachment is required, status_review is required
+2024-12-09 11:04:58 [ERROR]: Validation failed. url_file_attachment & status_review are required
+2024-12-09 11:05:07 [ERROR]: Validation failed. location_map, url_file_attachment & status_review are required
+2024-12-09 11:05:23 [ERROR]: Update failed. location_map, url_file_attachment & status_review are required
