@@ -163,7 +163,7 @@ export const DataWhere = async (req: Request, res: Response) => {
     try {
         // Log each entry
         dataArray.forEach((dataItem) => {
-            logger.info(`Processing data for entity_cd: ${dataItem.entity_cd} and reg_id: ${dataItem.reg_id}`);
+            logger.info(`Processing data Where for entity_cd: ${dataItem.entity_cd} and reg_id: ${dataItem.reg_id}`);
         });
 
         // Call the function to update the data in the database
@@ -234,7 +234,7 @@ export const DataUpdatePrint = async (req: Request, res: Response) => {
     try {
         // Log each entry
         dataArray.forEach((dataItem) => {
-            logger.info(`Processing data for entity_cd: ${dataItem.entity_cd} and reg_id: ${dataItem.reg_id}`);
+            logger.info(`Processing data Update Print for entity_cd: ${dataItem.entity_cd} and reg_id: ${dataItem.reg_id}`);
         });
 
         const result = await GetDataWhere(dataArray);
@@ -313,7 +313,7 @@ export const DataWhereTrx = async (req: Request, res: Response) => {
     try {
         // Log each entry
         dataArray.forEach((dataItem) => {
-            logger.info(`Processing data for entity_cd: ${dataItem.entity_cd} and reg_id: ${dataItem.reg_id}`);
+            logger.info(`Processing data Where Trx for entity_cd: ${dataItem.entity_cd} and reg_id: ${dataItem.reg_id}`);
         });
 
         // Call the function to update the data in the database

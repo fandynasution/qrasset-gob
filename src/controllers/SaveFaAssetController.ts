@@ -5,6 +5,7 @@ import multer from "multer";
 import * as ftp from 'basic-ftp';
 import { createLogger, format, transports } from "winston";
 import { checkAndUpdateAsset, syncToFassetTrx } from '../models/SaveFaAssetModel';
+import { checkAndUpdate, UpdatetoFassetTrx } from '../models/FaAssetSaveModel';
 import { getFtpDetails } from '../models/QrCodeModel';
 
 // Ensure the target directory exists
@@ -46,7 +47,7 @@ const getLogFileName = () => {
 };
 
 export const UpdateAsset = async (req: Request, res: Response) => {
-    // Buat logger
+    // Create logger
     const logger = createLogger({
         level: 'info',
         format: format.combine(
@@ -54,22 +55,25 @@ export const UpdateAsset = async (req: Request, res: Response) => {
             format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
         ),
         transports: [
-            new transports.File({ filename: path.join(logDir, getLogFileName()) }) // Simpan ke file log harian
+            new transports.File({ filename: path.join(logDir, getLogFileName()) }) // Save to daily log file
         ]
     });
 
     const dataWhereD = req.body;
-
     const dataArray = Array.isArray(dataWhereD) ? dataWhereD : [dataWhereD];
 
     // Validate that each entry has the required fields
-    const validateFields = (details: { entity_cd: string; reg_id: string; location_map: string; url_file_attachment: string; status_review: string }) => {
+    const validateFields = (details: { entity_cd: string; reg_id: string; location_map: string; files: string[]; status_review: string }) => {
         const missingFields = [];
-        if (!details.entity_cd) missingFields.push("entity_cd");
-        if (!details.reg_id) missingFields.push("reg_id");
-        if (!details.location_map) missingFields.push("location_map");
-        if (!details.url_file_attachment) missingFields.push("url_file_attachment");
-        if (!details.status_review) missingFields.push("status_review");
+        if (!details.entity_cd) missingFields.push("entity_cd cannot be empty");
+        if (!details.reg_id) missingFields.push("reg_id cannot be empty");
+        if (!details.location_map) missingFields.push("location_map cannot be empty");
+        if (!details.files || details.files.length < 1) {
+            missingFields.push("At least 1 file");
+        } else if (details.files.length > 3) {
+            missingFields.push("No more than 3 files allowed");
+        }
+        if (!details.status_review) missingFields.push("status_review cannot be empty");
         return missingFields;
     };
 
@@ -80,117 +84,142 @@ export const UpdateAsset = async (req: Request, res: Response) => {
     }).filter(entry => entry.missingFields.length > 0);
 
     if (invalidEntries.length > 0) {
-        const errorDetails = invalidEntries
-            .map(entry => {
-                const missingFields = entry.missingFields;
-                if (missingFields.length === 1) {
-                    return `${missingFields[0]} is required`;
-                } else if (missingFields.length === 2) {
-                    return `${missingFields.join(" & ")} are required`;
-                } else {
-                    const allExceptLast = missingFields.slice(0, -1).join(", ");
-                    const lastField = missingFields[missingFields.length - 1];
-                    return `${allExceptLast} & ${lastField} are required`;
-                }
-            })
-            .join("; ");
+        const ErrorField = invalidEntries.flatMap(entry => entry.missingFields);
 
-        const errorMessage = `Update failed. ${errorDetails}`;
-        
-        logger.error(errorMessage);
-
-        return res.status(400).json({
+        res.status(400).json({
             success: false,
-            message: errorMessage,
+            message: 'Validation failed',
+            ErrorField
         });
+        return;
     }
+
     try {
         for (const dataItem of dataArray) {
-            const { entity_cd, reg_id, url_file_attachment, status_review, notes, location_map, audit_status } = dataItem;
+            const { entity_cd, reg_id, files, status_review, notes, location_map, audit_status } = dataItem;
 
-            logger.info(`Processing data for entity_cd: ${entity_cd} and reg_id: ${reg_id}`);
+            logger.info(`Processing Update data for entity_cd: ${entity_cd} and reg_id: ${reg_id}`);
 
-            // Upload ke FTP jika url_file_attachment ada
-            let ftpUrl: string | null = null;
-            if (url_file_attachment) {
+            // Ensure reg_id is sanitized for file names
+            const sanitizedRegId = reg_id.replace(/\//g, "_");
+
+            // Process each file
+            const filePaths = []; // To store file paths for update
+            const ftpUrls = [];   // To store FTP URLs
+
+            for (const [index, fileObj] of files.entries()) {
                 try {
-                    // Decode Base64 URI dan simpan sebagai file gambar
-                    const base64Data = url_file_attachment.replace(/^data:image\/\w+;base64,/, '');
-                    const fileExtension = url_file_attachment.match(/\/(.*?)\;/)?.[1] || 'png'; // Ekstensi gambar
-                    const sanitizedRegId = reg_id.replace(/[\\/]/g, '_');
-                    const tempFileName = `Asset_${entity_cd}_${sanitizedRegId}.${fileExtension}`;
-                    const tempDir = path.join(__dirname, '../../storage/temppicture');
-                    if (!fs.existsSync(tempDir)) {
-                        fs.mkdirSync(tempDir, { recursive: true });
-                        logger.info(`Directory created: ${tempDir}`);
+                    // Validate fileObj and Base64 string
+                    if (!fileObj || typeof fileObj.file_data !== 'string') {
+                        throw new Error(`Invalid file object at index ${index + 1}. Expected a 'file_data' string.`);
                     }
-                    const tempFilePath = path.join(tempDir, tempFileName);
 
-                    fs.writeFileSync(tempFilePath, base64Data, { encoding: 'base64' });
-                    logger.info(`Temporary file created at: ${tempFilePath}`);
+                    const fileBase64 = fileObj.file_data;
+                    const match = fileBase64.match(/^data:image\/(png|jpeg|jpg);base64,(.+)$/);
+                    if (!match) {
+                        throw new Error(`Invalid Base64 format for file ${index + 1}`);
+                    }
 
-                    // Upload file ke server FTP
+                    const fileType = match[1];
+                    const fileData = match[2];
+                    const buffer = Buffer.from(fileData, 'base64');
+
+                    // Generate unique file name
+                    const now = new Date();
+                    const dateTime = now.toISOString().slice(0, 19).replace(/[:.-]/g, '_');
+                    const fileName = `${sanitizedRegId}_${dateTime}_${index + 1}.${fileType}`;
+                    const filePath = path.join(uploadDir, fileName);
+
+                    // Write the file locally
+                    fs.writeFileSync(filePath, buffer);
+                    logger.info(`Saved file: ${fileName} for reg_id: ${reg_id}`);
+                    filePaths.push(filePath);
+
+                    // Upload file to FTP
                     const ftpClient = new ftp.Client();
-                    ftpClient.ftp.verbose = true; // Untuk debugging
+                    ftpClient.ftp.verbose = true;
 
                     const ftpDetails = await getFtpDetails();
-
                     await ftpClient.access({
-                        host: ftpDetails.FTPServer, // Ganti dengan host FTP Anda
+                        host: ftpDetails.FTPServer,
                         port: parseInt(ftpDetails.FTPPort, 10),
-                        user: ftpDetails.FTPUser,       // Username FTP
-                        password: ftpDetails.FTPPassword,// Password FTP
-                        secure: false,           // Atur ke true jika menggunakan FTPS
+                        user: ftpDetails.FTPUser,
+                        password: ftpDetails.FTPPassword,
+                        secure: false,
                     });
 
-                    // Pastikan folder di FTP ada
                     const remoteFolderPath = `/ifca-att/FAAssetUpload/AssetPicture/`;
-                    await ftpClient.ensureDir(remoteFolderPath); // Membuat folder jika belum ada
+                    await ftpClient.ensureDir(remoteFolderPath);
                     logger.info(`Ensured folder exists: ${remoteFolderPath}`);
 
-                    const remoteFilePath = `${remoteFolderPath}${tempFileName}`;
-                    await ftpClient.uploadFrom(tempFilePath, remoteFilePath);
+                    const remoteFilePath = `${remoteFolderPath}${fileName}`;
+                    await ftpClient.uploadFrom(filePath, remoteFilePath);
                     logger.info(`File uploaded to FTP: ${remoteFilePath}`);
 
-                    // Simpan URL FTP
-                    ftpUrl = `${ftpDetails.URLPDF}${remoteFolderPath}${tempFileName}`;
+                    ftpUrls.push(`${ftpDetails.qrview}${remoteFolderPath}${fileName}`);
 
-                    // Hapus file sementara setelah diunggah
-                    fs.unlinkSync(tempFilePath);
-                    logger.info(`Temporary file deleted: ${tempFilePath}`);
+                    // Clean up local file
+                    fs.unlinkSync(filePath);
+                    logger.info(`Temporary file deleted: ${fileName}`);
 
                     ftpClient.close();
-                } catch (ftpError) {
-                    logger.error(`FTP upload failed for entity_cd: ${entity_cd}, reg_id: ${reg_id}. Error: ${ftpError}`);
-                    ftpUrl = null; // Tetapkan null jika terjadi kesalahan
+                } catch (error) {
+                    if (error instanceof Error) {
+                        logger.error(`Error processing file at index ${index + 1} for reg_id: ${reg_id}. Error: ${error.message}`);
+                        res.status(400).json({
+                            success: false,
+                            message: error.message,
+                            reg_id,
+                        });
+                    } else {
+                        logger.error(`Error processing file at index ${index + 1} for reg_id: ${reg_id}. Unknown error occurred.`);
+                        res.status(400).json({
+                            success: false,
+                            message: "An unknown error occurred.",
+                            reg_id,
+                        });
+                    }
+                    return;
                 }
             }
 
-            // Data untuk diperbarui
-            const fassetUpdates: { [key: string]: string | null } = {
-                url_file_attachment: ftpUrl, // Tetap null jika FTP gagal
-                status_review: status_review || null,
-                location_map: location_map || null,
-            };
+            // Call checkAndUpdateAsset function to update the database with the files' information
+            try {
+                await checkAndUpdate(entity_cd, reg_id, status_review, location_map, ftpUrls);
 
-            // Panggil fungsi untuk menyimpan data
-            await checkAndUpdateAsset(entity_cd, reg_id, fassetUpdates);
+                const fassetTrxUpdates = {
+                    new_status_review: status_review || null,
+                    note: notes || null,
+                    new_location_map: location_map || null,
+                    audit_status: audit_status || null,
+                    ftpUrlupdate: ftpUrls.length > 0 ? ftpUrls : null, // Ensure ftpUrlupdateNew is null if no URLs are present
+                };
 
-            // Data untuk tabel `mgr.fa_fasset_trx`
-            const fassetTrxUpdates: { [key: string]: string | null } = {
-                new_status_review: status_review || null,
-                note: notes || null,
-                new_location_map: location_map || null,
-                audit_status: audit_status || null,
-            };
-            await syncToFassetTrx(entity_cd, reg_id, fassetTrxUpdates);
-
-            logger.info(`Successfully updated data for entity_cd: ${entity_cd}, reg_id: ${reg_id}`);
+                await UpdatetoFassetTrx(entity_cd, reg_id, fassetTrxUpdates);
+            } catch (error) {
+                if (error instanceof Error) {
+                    logger.error(`Error updating database for reg_id: ${reg_id}. Error: ${error.message}`);
+                    res.status(400).json({
+                        success: false,
+                        message: error.message,
+                        reg_id,
+                    });
+                } else {
+                    logger.error(`Error updating database for reg_id: ${reg_id}. Error: Unknown error occurred.`);
+                    res.status(400).json({
+                        success: false,
+                        message: "An unknown error occurred.",
+                        reg_id,
+                    });
+                }
+                return;
+            }
+            
         }
 
-        return res.status(200).json({
+        res.status(200).json({
             success: true,
-            message: 'All data processed and inserted/updated successfully',
+            message: "Assets updated successfully",
         });
     } catch (error: unknown) {
         const errorMessage = error instanceof Error ? error.message : "An unknown error occurred";
