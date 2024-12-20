@@ -153,7 +153,7 @@ export const UpdateAsset = async (req: Request, res: Response) => {
                     logger.info(`File uploaded to FTP: ${remoteFilePath}`);
 
                     // Simpan URL FTP
-                    ftpUrl = `${ftpDetails.URLPDF}${remoteFolderPath}${tempFileName}`;
+                    ftpUrl = `${ftpDetails.qrview}${remoteFolderPath}${tempFileName}`;
 
                     // Hapus file sementara setelah diunggah
                     fs.unlinkSync(tempFilePath);

@@ -1,11 +1,12 @@
 import express from 'express';
-import { generateAndSaveQrCode } from '../controllers/QrCodeController';
+import { generateAndSaveQrCode, generateOneQrCode } from '../controllers/QrCodeController';
 import { DatanonQr, DatawithQr, DataWhere, DataUpdatePrint, DataWhereTrx } from '../controllers/FaAssetController';
 import { UpdateAsset } from '../controllers/SaveFaAssetController';
 
 const router = express.Router();
 
 router.get("/generate", generateAndSaveQrCode);
+router.post("/generateqr", generateOneQrCode);
 router.get("/datanonqr", DatanonQr);
 router.get("/datawithqr", DatawithQr);
 router.put('/update-print', DataUpdatePrint);
