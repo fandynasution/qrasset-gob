@@ -7,3 +7,6 @@ src/storage/log
 src/storage/log/qr
 .env
 logs/
+storage/log
+storage/assetpicture
+storage/temppicture
