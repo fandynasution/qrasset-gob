@@ -76,7 +76,7 @@ router.post('/datastaffEmail', getStaffDataEmail);
  *                 type: string
  *                 description: Email Address identifier
  *             example:
- *               email: "dania.nurmayanti@ifca.co.id"
+ *               email: "ariyanto@ifca.co.id"
  *     responses:
  *       200:
  *         description: Successful Select Data 
@@ -111,8 +111,8 @@ router.put('/updatestaff', updateStaffData);
  *                 dept_cd:
  *                   type: string
  *             example:
- *               entity_cd: "01"
- *               reg_id: "002/RNV1/BTID/IV/13"
+ *               entity_cd: "0001"
+ *               reg_id: "001/COM/GOB/XII/24"
  *               staff_id: "MGR"
  *               div_cd: "0101"
  *               dept_cd: "01"
@@ -148,8 +148,8 @@ router.post("/get-asset", DataWhere);
  *                 reg_id:
  *                   type: string
  *               example:
- *                 entity_cd: "01"
- *                 reg_id: "025/EQP/BTID/VII/18"
+ *                 entity_cd: "0001"
+ *                 reg_id: "001/COM/GOB/XII/24"
  *     responses:
  *       200:
  *         description: Successful Select Data 
@@ -182,8 +182,8 @@ router.post("/get-asset-trx", DataWhereTrx);
  *                 reg_id:
  *                   type: string
  *               example:
- *                 entity_cd: "01"
- *                 reg_id: "025/EQP/BTID/VII/18"
+ *                 entity_cd: "0001"
+ *                 reg_id: "001/COM/GOB/XII/24"
  *     responses:
  *       200:
  *         description: Successful Select Data 
@@ -211,11 +211,11 @@ router.put('/update-asset', UpdateAsset);
  *               entity_cd:
  *                 type: string
  *                 description: Entity code identifier
- *                 example: "01"
+ *                 example: "0001"
  *               reg_id:
  *                 type: string
  *                 description: Registration ID of the asset
- *                 example: "025/EQP/BTID/VII/18"
+ *                 example: "001/COM/GOB/XII/24"
  *               location_map:
  *                 type: string
  *                 description: Geographical coordinates (latitude and longitude)
