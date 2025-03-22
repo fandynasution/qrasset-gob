@@ -75,7 +75,6 @@ export const syncToFassetTrx = async (
                 ORDER BY trx_date DESC
             `);
         const existingData = existingDataResult.recordset[0];
-        // console.log(existingData.new_location_map);
         if (existingDataResult.recordset.length === 0) {
             await pool.request()
                 .input('entity_cd', sql.VarChar, entity_cd)

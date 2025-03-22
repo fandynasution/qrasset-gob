@@ -142,7 +142,6 @@ export const DataWhere = async (req: Request, res: Response) => {
     });
 
     const dataWhereD = req.body;
-    console.log(dataWhereD);
 
     const dataArray: DataItem[] = Array.isArray(dataWhereD) ? dataWhereD : [dataWhereD];
 
@@ -292,7 +291,6 @@ export const DataWhereTrx = async (req: Request, res: Response) => {
     });
 
     const dataWhereD = req.body;
-    console.log(dataWhereD);
 
     const dataArray: DataItem[] = Array.isArray(dataWhereD) ? dataWhereD : [dataWhereD];
 

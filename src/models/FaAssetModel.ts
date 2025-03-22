@@ -2,8 +2,48 @@ import { poolPromise } from '../lib/db';
 import { Request, Response } from "express";
 import * as sql from 'mssql';
 import { DataItem } from '../types/QrCodeTypes';
+import fs from 'fs';
+import path from 'path';
+import logger from "../logger";
+import { createLogger, format, transports } from "winston";
+
+// Folder log
+const logDir = path.join(__dirname, '../storage/log');
+
+// Pastikan folder log ada
+if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir, { recursive: true });
+}
+
+// Format tanggal untuk nama file
+const getLogFileName = () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `log-${year}-${month}-${day}.txt`;
+};
 
 export const GetDatanonQr = async () => {
+    const storagePath = path.join(__dirname, '..', 'storage', 'qr'); 
+            
+    if (!fs.existsSync(storagePath)) {
+        fs.mkdirSync(storagePath, { recursive: true }); // Create the directory if it doesn't exist
+    }
+
+    
+    // Buat logger
+    const logger = createLogger({
+        level: 'info',
+        format: format.combine(
+            format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+            format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+        ),
+        transports: [
+            new transports.File({ filename: path.join(logDir, getLogFileName()) }), // Simpan ke file log harian
+        ]
+    });
+        
     try {
         const pool = await poolPromise;  // Get the pool
         const result = await pool.request().query(`
@@ -11,12 +51,32 @@ export const GetDatanonQr = async () => {
         `);
         return result.recordset;
     } catch (error) {
-        console.error("Error fetching data", error);
+        logger.error("Error fetching data", error);
         throw error;
     }
 };
 
 export const GetDataWithQr = async () => {
+    const storagePath = path.join(__dirname, '..', 'storage', 'qr'); 
+            
+    if (!fs.existsSync(storagePath)) {
+        fs.mkdirSync(storagePath, { recursive: true }); // Create the directory if it doesn't exist
+    }
+
+    
+    // Buat logger
+    const logger = createLogger({
+        level: 'info',
+        format: format.combine(
+            format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+            format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+        ),
+        transports: [
+            new transports.File({ filename: path.join(logDir, getLogFileName()) }), // Simpan ke file log harian
+        ]
+    });
+        
+        
     try {
         const pool = await poolPromise;  // Get the pool
         const result = await pool.request().query(`
@@ -24,12 +84,31 @@ export const GetDataWithQr = async () => {
         `);
         return result.recordset;
     } catch (error) {
-        console.error("Error fetching data", error);
+        logger.error("Error fetching data", error);
         throw error;
     }
 };
 
 export const GetDataWhere = async (data: DataItem[]) => {
+    const storagePath = path.join(__dirname, '..', 'storage', 'qr'); 
+            
+    if (!fs.existsSync(storagePath)) {
+        fs.mkdirSync(storagePath, { recursive: true }); // Create the directory if it doesn't exist
+    }
+
+    
+    // Buat logger
+    const logger = createLogger({
+        level: 'info',
+        format: format.combine(
+            format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+            format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+        ),
+        transports: [
+            new transports.File({ filename: path.join(logDir, getLogFileName()) }), // Simpan ke file log harian
+        ]
+    });
+    
     if (data.length === 0) {
         return { message: "No records to Fetch." };
     }
@@ -61,12 +140,31 @@ export const GetDataWhere = async (data: DataItem[]) => {
         await transaction.commit();
         return resultData;  // Include the result data in the response        
     } catch (error) {
-        console.error("Error fetching data", error);
+        logger.error("Error fetching data", error);
         throw error;  // Rethrow the error to be handled in the controller
     }
 }
 
 export const UpdateDataPrint = async (data: DataItem[]) => {
+    const storagePath = path.join(__dirname, '..', 'storage', 'qr'); 
+            
+    if (!fs.existsSync(storagePath)) {
+        fs.mkdirSync(storagePath, { recursive: true }); // Create the directory if it doesn't exist
+    }
+
+    
+    // Buat logger
+    const logger = createLogger({
+        level: 'info',
+        format: format.combine(
+            format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+            format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+        ),
+        transports: [
+            new transports.File({ filename: path.join(logDir, getLogFileName()) }), // Simpan ke file log harian
+        ]
+    });
+    
     if (data.length === 0) {
         return { message: "No records to Update." };
     }
@@ -95,12 +193,31 @@ export const UpdateDataPrint = async (data: DataItem[]) => {
             message: "All records updated successfully."
         };
     } catch (error) {
-        console.error("Error updating data", error);
+        logger.error("Error updating data", error);
         throw error;  // Rethrow the error to be handled in the controller
     }
 }
 
 export const DataQRSaving = async (data: DataItem[]) => {
+    const storagePath = path.join(__dirname, '..', 'storage', 'qr'); 
+            
+    if (!fs.existsSync(storagePath)) {
+        fs.mkdirSync(storagePath, { recursive: true }); // Create the directory if it doesn't exist
+    }
+
+    
+    // Buat logger
+    const logger = createLogger({
+        level: 'info',
+        format: format.combine(
+            format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+            format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+        ),
+        transports: [
+            new transports.File({ filename: path.join(logDir, getLogFileName()) }), // Simpan ke file log harian
+        ]
+    });
+    
     if (data.length === 0) {
         return { message: "No records to Update." };
     }
@@ -122,12 +239,31 @@ export const DataQRSaving = async (data: DataItem[]) => {
             message: "All records inserted successfully."
         };
     } catch (error) {
-        console.error("Error Inserting data", error);
+        logger.error("Error Inserting data", error);
         throw error;  // Rethrow the error to be handled in the controller
     }
 }
 
 export const GetDataWhereTrx = async (data: DataItem[]) => {
+    const storagePath = path.join(__dirname, '..', 'storage', 'qr'); 
+            
+    if (!fs.existsSync(storagePath)) {
+        fs.mkdirSync(storagePath, { recursive: true }); // Create the directory if it doesn't exist
+    }
+
+    
+    // Buat logger
+    const logger = createLogger({
+        level: 'info',
+        format: format.combine(
+            format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+            format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+        ),
+        transports: [
+            new transports.File({ filename: path.join(logDir, getLogFileName()) }), // Simpan ke file log harian
+        ]
+    });
+    
     if (data.length === 0) {
         return { message: "No records to Fetch." };
     }
@@ -160,7 +296,7 @@ export const GetDataWhereTrx = async (data: DataItem[]) => {
         await transaction.commit();
         return resultData;  // Include the result data in the response        
     } catch (error) {
-        console.error("Error fetching data", error);
+        logger.error("Error fetching data", error);
         throw error;  // Rethrow the error to be handled in the controller
     }
 }

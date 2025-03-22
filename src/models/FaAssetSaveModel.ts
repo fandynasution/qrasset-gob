@@ -75,34 +75,34 @@ export const checkAndUpdate = async (
                 FROM mgr.fa_fasset
                 WHERE entity_cd = @entity_cd AND reg_id = @reg_id
             `);
-        
+        logger.error(files[0]);
         const existingData = existingDataResult.recordset[0];
         if (existingData) {
             let updates: { [key: string]: string | null } = {};
             // Kondisi untuk 3 file
             if (files.length === 3) {
-                updates['url_file_attachment'] = files[0];
-                updates['url_file_attachment2'] = files[1];
-                updates['url_file_attachment3'] = files[2];
+                updates['url_file_attachment2'] = files[0];
+                updates['url_file_attachment3'] = files[1];
+                updates['url_file_attachment'] = files[2];
             }
             // Kondisi untuk 2 file
             else if (files.length === 2) {
-                updates['url_file_attachment'] = files[0];
-                updates['url_file_attachment2'] = files[1];
+                updates['url_file_attachment2'] = files[0];
+                updates['url_file_attachment3'] = files[1];
                 // Jika file 2 sudah ada di url_file_attachment3, jangan diupdate
                 if (!existingData.url_file_attachment3) {
-                    updates['url_file_attachment3'] = null;
+                    updates['url_file_attachment'] = null;
                 }
             }
             // Kondisi untuk 1 file
             else if (files.length === 1) {
-                updates['url_file_attachment'] = files[0];
+                updates['url_file_attachment2'] = files[0];
                 // Jika url_file_attachment2 atau url_file_attachment3 sudah ada data, biarkan tetap
                 if (!existingData.url_file_attachment2) {
-                    updates['url_file_attachment2'] = null;
+                    updates['url_file_attachment3'] = null;
                 }
                 if (!existingData.url_file_attachment3) {
-                    updates['url_file_attachment3'] = null;
+                    updates['url_file_attachment'] = null;
                 }
             }
 
@@ -286,7 +286,7 @@ export const UpdatetoFassetTrx = async (
             }
         }
     } catch (error) {
-        console.error('Error syncing data to fa_fasset_trx:', error);
+        logger.error('Error syncing data to fa_fasset_trx:', error);
         throw error;
     }
 }

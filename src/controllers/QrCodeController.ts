@@ -98,8 +98,6 @@ export const generateAndSaveQrCode = async (req: Request, res: Response) => {
 
             ftpUrl = `${ftpDetails.qrview}${remoteFolderPath}${fileName}`;
 
-            console.log(ftpUrl);
-
             fs.unlinkSync(filePath);
             logger.info(`Temporary file deleted: ${filePath}`);
             ftpClient.close();

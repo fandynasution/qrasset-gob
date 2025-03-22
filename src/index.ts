@@ -26,7 +26,8 @@ const getLocalIP = () => {
 };
 
 app.use(cors({ origin: '*' }));
-app.use(express.json());
+app.use(express.json({ limit: '50mb' })); // Menambah limit payload
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // Setup Swagger
 setupSwagger(app);
